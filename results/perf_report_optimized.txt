@@ -1,0 +1,186 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 167  of event 'cpu-clock:u'
+# Event count (approx.): 1686868670
+#
+# Children      Self  Command         Shared Object     Symbol                              
+# ........  ........  ..............  ................  ....................................
+#
+   100.00%     0.00%  prog_optimized  prog_optimized    [.] _start
+            |
+            ---_start
+               __libc_start_main
+               0x7e204782a600
+               main
+               |          
+               |--70.06%--signal_filter_engine (inlined)
+               |          |          
+               |          |--58.08%--apply_spatial_filter (inlined)
+               |          |          
+               |           --11.98%--normalize_signal (inlined)
+               |          
+               |--26.35%--vector_math_engine (inlined)
+               |          |          
+               |          |--14.37%--compute_fma_kernel (inlined)
+               |          |          
+               |           --11.98%--scale_and_clamp (inlined)
+               |          
+               |--2.99%--init_dataset
+               |          
+                --0.60%--compute_summary
+
+   100.00%     0.00%  prog_optimized  libc.so.6         [.] __libc_start_main
+            |
+            ---__libc_start_main
+               0x7e204782a600
+               main
+               |          
+               |--70.06%--signal_filter_engine (inlined)
+               |          |          
+               |          |--58.08%--apply_spatial_filter (inlined)
+               |          |          
+               |           --11.98%--normalize_signal (inlined)
+               |          
+               |--26.35%--vector_math_engine (inlined)
+               |          |          
+               |          |--14.37%--compute_fma_kernel (inlined)
+               |          |          
+               |           --11.98%--scale_and_clamp (inlined)
+               |          
+               |--2.99%--init_dataset
+               |          
+                --0.60%--compute_summary
+
+   100.00%     0.00%  prog_optimized  libc.so.6         [.] 0x00007e204782a600
+            |
+            ---0x7e204782a600
+               main
+               |          
+               |--70.06%--signal_filter_engine (inlined)
+               |          |          
+               |          |--58.08%--apply_spatial_filter (inlined)
+               |          |          
+               |           --11.98%--normalize_signal (inlined)
+               |          
+               |--26.35%--vector_math_engine (inlined)
+               |          |          
+               |          |--14.37%--compute_fma_kernel (inlined)
+               |          |          
+               |           --11.98%--scale_and_clamp (inlined)
+               |          
+               |--2.99%--init_dataset
+               |          
+                --0.60%--compute_summary
+
+   100.00%     0.00%  prog_optimized  prog_optimized    [.] main
+            |
+            ---main
+               |          
+               |--70.06%--signal_filter_engine (inlined)
+               |          |          
+               |          |--58.08%--apply_spatial_filter (inlined)
+               |          |          
+               |           --11.98%--normalize_signal (inlined)
+               |          
+               |--26.35%--vector_math_engine (inlined)
+               |          |          
+               |          |--14.37%--compute_fma_kernel (inlined)
+               |          |          
+               |           --11.98%--scale_and_clamp (inlined)
+               |          
+               |--2.99%--init_dataset
+               |          
+                --0.60%--compute_summary
+
+    70.06%     0.00%  prog_optimized  prog_optimized    [.] signal_filter_engine (inlined)
+            |
+            ---signal_filter_engine (inlined)
+               |          
+               |--58.08%--apply_spatial_filter (inlined)
+               |          
+                --11.98%--normalize_signal (inlined)
+
+    58.08%    58.08%  prog_optimized  prog_optimized    [.] apply_spatial_filter.constprop.0
+            |
+            ---_start
+               __libc_start_main
+               0x7e204782a600
+               main
+               signal_filter_engine (inlined)
+               apply_spatial_filter (inlined)
+
+    58.08%     0.00%  prog_optimized  prog_optimized    [.] apply_spatial_filter (inlined)
+            |
+            ---apply_spatial_filter (inlined)
+
+    26.35%     0.00%  prog_optimized  prog_optimized    [.] vector_math_engine (inlined)
+            |
+            ---vector_math_engine (inlined)
+               |          
+               |--14.37%--compute_fma_kernel (inlined)
+               |          
+                --11.98%--scale_and_clamp (inlined)
+
+    14.37%    14.37%  prog_optimized  prog_optimized    [.] compute_fma_kernel.constprop.0
+            |
+            ---_start
+               __libc_start_main
+               0x7e204782a600
+               main
+               vector_math_engine (inlined)
+               compute_fma_kernel (inlined)
+
+    14.37%     0.00%  prog_optimized  prog_optimized    [.] compute_fma_kernel (inlined)
+            |
+            ---compute_fma_kernel (inlined)
+
+    11.98%    11.98%  prog_optimized  prog_optimized    [.] normalize_signal.constprop.0
+            |
+            ---_start
+               __libc_start_main
+               0x7e204782a600
+               main
+               signal_filter_engine (inlined)
+               normalize_signal (inlined)
+
+    11.98%    11.98%  prog_optimized  prog_optimized    [.] scale_and_clamp.constprop.0
+            |
+            ---_start
+               __libc_start_main
+               0x7e204782a600
+               main
+               vector_math_engine (inlined)
+               scale_and_clamp (inlined)
+
+    11.98%     0.00%  prog_optimized  prog_optimized    [.] normalize_signal (inlined)
+            |
+            ---normalize_signal (inlined)
+
+    11.98%     0.00%  prog_optimized  prog_optimized    [.] scale_and_clamp (inlined)
+            |
+            ---scale_and_clamp (inlined)
+
+     2.99%     2.99%  prog_optimized  prog_optimized    [.] init_dataset
+            |
+            ---_start
+               __libc_start_main
+               0x7e204782a600
+               main
+               init_dataset
+
+     0.60%     0.60%  prog_optimized  prog_optimized    [.] compute_summary
+            |
+            ---_start
+               __libc_start_main
+               0x7e204782a600
+               main
+               compute_summary
+
+
+
+#
+# (Cannot load tips.txt file, please install perf!)
+#

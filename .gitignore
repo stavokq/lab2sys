@@ -1,0 +1,7 @@
+prog_baseline
+prog_optimized
+perf*.data
+perf*.data.old
+FlameGraph/
+results/*.perf
+results/*.folded

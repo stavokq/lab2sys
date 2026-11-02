@@ -1,0 +1,20 @@
+
+ Performance counter stats for './prog_baseline':
+
+                 7      context-switches                 #      1.6 cs/sec  cs_per_second     
+                 0      cpu-migrations                   #      0.0 migrations/sec  migrations_per_second
+             49220      page-faults                      #  11117.3 faults/sec  page_faults_per_second
+           4427.32 msec task-clock                       #      1.0 CPUs  CPUs_utilized       
+         234302064      L1-dcache-load-misses            #      1.0 %  l1d_miss_rate            (42.89%)
+          15126872      branch-misses                    #      1.0 %  branch_miss_rate         (42.92%)
+        1537787873      branches                         #    347.3 M/sec  branch_frequency     (57.19%)
+       17196936907      cpu-cycles                       #      3.9 GHz  cycles_frequency       (57.18%)
+       39889858857      instructions                     #      2.3 instructions  insn_per_cycle  (57.11%)
+         356393765      stalled-cycles-frontend          #     0.02 frontend_cycles_idle        (57.08%)
+
+       4.431996281 seconds time elapsed
+
+       4.248318000 seconds user
+       0.179844000 seconds sys
+
+

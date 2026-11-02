@@ -1,0 +1,170 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 419  of event 'cpu-clock:u'
+# Event count (approx.): 4232323190
+#
+# Children      Self  Command        Shared Object     Symbol                  
+# ........  ........  .............  ................  ........................
+#
+   100.00%     0.00%  prog_baseline  prog_baseline     [.] _start
+            |
+            ---_start
+               __libc_start_main
+               0x77058642a600
+               main
+               |          
+               |--52.27%--signal_filter_engine
+               |          |          
+               |          |--34.37%--apply_spatial_filter
+               |          |          
+               |           --17.90%--normalize_signal
+               |          
+               |--45.35%--vector_math_engine
+               |          |          
+               |          |--26.73%--compute_fma_kernel
+               |          |          
+               |           --18.62%--scale_and_clamp
+               |          
+               |--1.19%--compute_summary
+               |          
+                --1.19%--init_dataset
+
+   100.00%     0.00%  prog_baseline  libc.so.6         [.] __libc_start_main
+            |
+            ---__libc_start_main
+               0x77058642a600
+               main
+               |          
+               |--52.27%--signal_filter_engine
+               |          |          
+               |          |--34.37%--apply_spatial_filter
+               |          |          
+               |           --17.90%--normalize_signal
+               |          
+               |--45.35%--vector_math_engine
+               |          |          
+               |          |--26.73%--compute_fma_kernel
+               |          |          
+               |           --18.62%--scale_and_clamp
+               |          
+               |--1.19%--compute_summary
+               |          
+                --1.19%--init_dataset
+
+   100.00%     0.00%  prog_baseline  libc.so.6         [.] 0x000077058642a600
+            |
+            ---0x77058642a600
+               main
+               |          
+               |--52.27%--signal_filter_engine
+               |          |          
+               |          |--34.37%--apply_spatial_filter
+               |          |          
+               |           --17.90%--normalize_signal
+               |          
+               |--45.35%--vector_math_engine
+               |          |          
+               |          |--26.73%--compute_fma_kernel
+               |          |          
+               |           --18.62%--scale_and_clamp
+               |          
+               |--1.19%--compute_summary
+               |          
+                --1.19%--init_dataset
+
+   100.00%     0.00%  prog_baseline  prog_baseline     [.] main
+            |
+            ---main
+               |          
+               |--52.27%--signal_filter_engine
+               |          |          
+               |          |--34.37%--apply_spatial_filter
+               |          |          
+               |           --17.90%--normalize_signal
+               |          
+               |--45.35%--vector_math_engine
+               |          |          
+               |          |--26.73%--compute_fma_kernel
+               |          |          
+               |           --18.62%--scale_and_clamp
+               |          
+               |--1.19%--compute_summary
+               |          
+                --1.19%--init_dataset
+
+    52.27%     0.00%  prog_baseline  prog_baseline     [.] signal_filter_engine
+            |
+            ---signal_filter_engine
+               |          
+               |--34.37%--apply_spatial_filter
+               |          
+                --17.90%--normalize_signal
+
+    45.35%     0.00%  prog_baseline  prog_baseline     [.] vector_math_engine
+            |
+            ---vector_math_engine
+               |          
+               |--26.73%--compute_fma_kernel
+               |          
+                --18.62%--scale_and_clamp
+
+    34.37%    34.37%  prog_baseline  prog_baseline     [.] apply_spatial_filter
+            |
+            ---_start
+               __libc_start_main
+               0x77058642a600
+               main
+               signal_filter_engine
+               apply_spatial_filter
+
+    26.73%    26.73%  prog_baseline  prog_baseline     [.] compute_fma_kernel
+            |
+            ---_start
+               __libc_start_main
+               0x77058642a600
+               main
+               vector_math_engine
+               compute_fma_kernel
+
+    18.62%    18.62%  prog_baseline  prog_baseline     [.] scale_and_clamp
+            |
+            ---_start
+               __libc_start_main
+               0x77058642a600
+               main
+               vector_math_engine
+               scale_and_clamp
+
+    17.90%    17.90%  prog_baseline  prog_baseline     [.] normalize_signal
+            |
+            ---_start
+               __libc_start_main
+               0x77058642a600
+               main
+               signal_filter_engine
+               normalize_signal
+
+     1.19%     1.19%  prog_baseline  prog_baseline     [.] compute_summary
+            |
+            ---_start
+               __libc_start_main
+               0x77058642a600
+               main
+               compute_summary
+
+     1.19%     1.19%  prog_baseline  prog_baseline     [.] init_dataset
+            |
+            ---_start
+               __libc_start_main
+               0x77058642a600
+               main
+               init_dataset
+
+
+
+#
+# (Cannot load tips.txt file, please install perf!)
+#

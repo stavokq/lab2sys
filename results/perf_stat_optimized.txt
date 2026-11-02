@@ -1,0 +1,20 @@
+
+ Performance counter stats for './prog_optimized':
+
+                 5      context-switches                 #      2.6 cs/sec  cs_per_second     
+                 0      cpu-migrations                   #      0.0 migrations/sec  migrations_per_second
+             49220      page-faults                      #  25750.6 faults/sec  page_faults_per_second
+           1911.41 msec task-clock                       #      1.0 CPUs  CPUs_utilized       
+         177418627      L1-dcache-load-misses            #     12.8 %  l1d_miss_rate            (42.86%)
+          15365013      branch-misses                    #      2.6 %  branch_miss_rate         (43.09%)
+         594772128      branches                         #    311.2 M/sec  branch_frequency     (57.32%)
+        7272374316      cpu-cycles                       #      3.8 GHz  cycles_frequency       (57.31%)
+        4823187529      instructions                     #      0.7 instructions  insn_per_cycle  (57.14%)
+         275220327      stalled-cycles-frontend          #     0.04 frontend_cycles_idle        (56.91%)
+
+       1.915431065 seconds time elapsed
+
+       1.740362000 seconds user
+       0.172035000 seconds sys
+
+
